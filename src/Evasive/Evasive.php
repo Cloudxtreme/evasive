@@ -41,7 +41,7 @@ class Evasive
      * @var array
      */
     private $pageRequestMethods = [
-        'GET'
+        'GET', 'POST', 'DELETE'
     ];
 
     /**
@@ -81,19 +81,19 @@ class Evasive
         
         $this->storage = new $type($options);
         
-        if (in_array('pageCount', $options)) {
+        if (array_key_exists('pageCount', $options)) {
             $this->pageCount = $options['pageCount'];
         }
         
-        if (in_array('pageInternal', $options)) {
+        if (array_key_exists('pageInternal', $options)) {
             $this->pageInternal = $options['pageInternal'];
         }
         
-        if (in_array('blockingPeriod', $options)) {
+        if (array_key_exists('blockingPeriod', $options)) {
             $this->blockingPeriod = $options['blockingPeriod'];
         }
         
-        if (in_array('pageRequestMethods', $options)) {
+        if (array_key_exists('pageRequestMethods', $options)) {
             $this->pageRequestMethods = $options['pageRequestMethods'];
         }
         
@@ -191,6 +191,44 @@ class Evasive
         ]);
     }
 
+    
+    /**
+     * How many identical requests to a specific URI a user can make
+     * 
+     * @param int $pageCount
+     */
+    public function setPageCount($pageCount) {
+        $this->pageCount = $pageCount;
+    }
+    
+    /**
+     * How many identical requests to a specific URI a user can make
+     * 
+     * @return int
+     */
+    public function getPageCount() {
+        return $this->pageCount;
+    }
+    
+    /**
+     * How many identical requests to a specific URI a user can make
+     *
+     * @param int $pageCount
+     */
+    public function setPageInterval($pageInterval) {
+        $this->pageInternal = $pageInterval;
+    }
+    
+    /**
+     * How many identical requests to a specific URI a user can make
+     *
+     * @return int
+     */
+    public function getPageInterval() {
+        return $this->pageInternal;
+    }
+    
+    
     private function getRequestMethod()
     {
         return $_SERVER['REQUEST_METHOD'];
