@@ -3,7 +3,7 @@ evasive
 
 [![Latest Stable Version](https://poser.pugx.org/aporat/evasive/version.png)](https://packagist.org/packages/aporat/evasive) [![Composer Downloads](https://poser.pugx.org/aporat/evasive/d/total.png)](https://packagist.org/packages/aporat/evasive)
 
-[![Build Status](https://travis-ci.org/aporat/evasive.png?branch=master)](https://travis-ci.org/aporat/evasive) [![Dependency Status](https://www.versioneye.com/user/projects/529f708e632bac512c000002/badge.png)](https://www.versioneye.com/user/projects/521b6fd1632bac7a5900b02a) [![Coverage Status](https://coveralls.io/repos/aporat/evasive/badge.png)](https://coveralls.io/r/aporat/evasive) [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/aporat/evasive/badges/quality-score.png?s=df30b0edc21d1ecba6c276414014f21d857b011f)](https://scrutinizer-ci.com/g/aporat/evasive/)
+[![Build Status](https://travis-ci.org/aporat/evasive.png?branch=master)](https://travis-ci.org/aporat/evasive) [![Dependency Status](https://www.versioneye.com/user/projects/52a9e981632bacf5ac000045/badge.png)](https://www.versioneye.com/user/projects/52a9e981632bacf5ac000045) [![Coverage Status](https://coveralls.io/repos/aporat/evasive/badge.png)](https://coveralls.io/r/aporat/evasive) [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/aporat/evasive/badges/quality-score.png?s=df30b0edc21d1ecba6c276414014f21d857b011f)](https://scrutinizer-ci.com/g/aporat/evasive/)
 
 PHP library that provides evasive action in the event of an HTTP DoS or DDoS attack or brute force attack.
 
