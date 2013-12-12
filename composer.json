@@ -1,0 +1,38 @@
+{
+	"name" : "aporat/evasive",
+	"description" : "PHP library that provides evasive action in the event of an HTTP DoS or DDoS attack or brute force attack",
+	"type" : "library",
+	"authors" : [{
+			"name" : "Adar Porat",
+			"email" : "adar.porat@gmail.com",
+			"homepage" : "http://github.com/aporat"
+		}
+	],
+	"keywords" : [
+		"ddos",
+		"brute",
+		"attack",
+		"refresh",
+		"block"
+	],
+	"homepage" : "https://github.com/aporat/evasive",
+	"license" : [
+		"Apache-2.0"
+	],
+	"require" : {
+		"php" : ">=5.4",
+		"monolog/monolog": "1.7.*@dev"
+	},
+	"require-dev" : {
+		"phpunit/phpunit" : "3.7.*@stable",
+		"phpunit/php-invoker" : ">=1.1.0,<1.2.0",
+		"satooshi/php-coveralls" : "0.6.*"
+	},
+	"autoload": {
+	        "psr-0": {"Evasive": "src/"}
+	},
+	"support" : {
+		"email" : "adar.porat@gmail.com",
+		"issues" : "https://github.com/aporat/iap-validator/issues"
+	}
+}
