@@ -249,7 +249,7 @@ class Evasive
 
     private function getRequestUri()
     {
-        return $_SERVER['REQUEST_URI'];
+        return strtok($_SERVER["REQUEST_URI"], '?');
     }
 
     private function getHttpHost()
